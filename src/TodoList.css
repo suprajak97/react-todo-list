@@ -1,0 +1,84 @@
+/* TodoList.css */
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  .container {
+    width: 400px;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05); /* Transparent background with subtle overlay */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Larger font size */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #ccc; /* Lighter placeholder text */
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: dodgerblue;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li span {
+    cursor: pointer;
+    font-weight: bold; /* Bolder text */
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
